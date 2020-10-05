@@ -1,0 +1,47 @@
+<mat-drawer-container style="height: 100%;">
+    <mat-drawer #drawer class="sidenav" mode="side" style="width: 250px;" opened="true">
+        <app-side-nav></app-side-nav>
+    </mat-drawer>
+
+
+    <div class="header" fxLayout="row" fxLayoutAlign="space-between center">
+        <div  fxLayout="row" fxLayoutAlign="space-around center">
+            <button mat-icon-button type="button" mat-button (click)="drawer.toggle()" class="margin-right">
+                <mat-icon>view_headline</mat-icon>
+            </button>
+            <mat-form-field appearance="outline" style="margin-bottom: 3px;">
+                <input matInput type="text" outline>
+                <button disabled matPrefix mat-icon-button>
+                    <mat-icon>search</mat-icon>
+                </button>
+            </mat-form-field>
+        </div>
+        <div fxLayout="row" fxLayoutAlign="space-between center" style="margin-right: 20px;">
+            <button mat-icon-button class="margin-right">
+                <mat-icon>notifications</mat-icon>
+            </button>
+            <button mat-icon-button class="margin-right">
+                <mat-icon>chat_bubble</mat-icon>
+            </button>
+            <img src="assets\img\1_1yjbmb_mTngFxZ5qA3RLOw.jpeg" class="profileImage">
+        </div>
+    </div>
+    <!-- <mat-toolbar  >
+        <button mat-icon-button  (click)="drawer.toggle()">
+            <mat-icon>menu</mat-icon>
+        </button>
+        <mat-form-field appearance="outline">
+            <input matInput type="text" outline>
+            <button disabled matPrefix mat-icon-button>
+                <mat-icon>search</mat-icon>
+            </button>
+        </mat-form-field>
+        <span class="spacer"></span>
+        <button mat-icon-button>
+            <mat-icon>favorite</mat-icon>
+        </button>
+        <button mat-icon-button>
+            <mat-icon>share</mat-icon>
+        </button>
+    </mat-toolbar> -->
+</mat-drawer-container>
