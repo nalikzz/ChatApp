@@ -1,28 +1,20 @@
 <div fxLayout="row" fxLayoutAlign="center center" class="header-username">
     <h3 style="color: white;">Menu</h3>
 </div>
-<!-- <mat-nav-list style="padding: 0px;">
-    <button mat-icon-button color="primary" >
-        <a matLine [routerLink]="['/detail']">
-            <p matLine>Title</p>
-        </a>
-        <button mat-icon-button >
-            <mat-icon>add</mat-icon>
-        </button>
-    </button>
-    <a mat-list-item>Second Page</a>
-    <a mat-list-item>Setting</a>
-    <a mat-list-item>Log out</a>
-</mat-nav-list> -->
 <mat-nav-list style="padding: 0px;">
-    <mat-list-item>
+    <mat-list-item routerLink="/setting" routerLinkActive="active" >
         <mat-icon mat-list-icon>chat</mat-icon>
-        <div mat-line>test</div>
+        <div mat-line>Chat</div>
     </mat-list-item>
     <mat-divider></mat-divider>
     <mat-list-item>
-        <mat-icon mat-list-icon>chat</mat-icon>
-        <div mat-line>test</div>
+        <mat-icon mat-list-icon>settings</mat-icon>
+        <div mat-line>Setting</div>
+    </mat-list-item>
+    <mat-divider></mat-divider>
+    <mat-list-item>
+        <mat-icon mat-list-icon>login</mat-icon>
+        <div mat-line>Log Out</div>
     </mat-list-item>
     <mat-divider></mat-divider>
 </mat-nav-list>
