@@ -4,7 +4,7 @@
     </mat-drawer>
 
 
-    <div class="header" fxLayout="row" fxLayoutAlign="space-between center">
+    <!-- <mat-toolbar class="header" fxLayout="row" fxLayoutAlign="space-between center" color="warn">
         <div  fxLayout="row" fxLayoutAlign="space-around center">
             <button mat-icon-button type="button" mat-button (click)="drawer.toggle()" class="margin-right" color="primary">
                 <mat-icon>menu</mat-icon>
@@ -25,17 +25,21 @@
             </button>
             <img src="assets\img\1_1yjbmb_mTngFxZ5qA3RLOw.jpeg" class="profileImage">
         </div>
-    </div>
-    <!-- <mat-toolbar  >
-        <button mat-icon-button  (click)="drawer.toggle()">
+    </mat-toolbar> -->
+    <mat-toolbar color="primary">
+        <button mat-icon-button (click)="drawer.toggle()">
             <mat-icon>menu</mat-icon>
         </button>
-        <mat-form-field appearance="outline">
+        <!-- <mat-form-field appearance="outline">
             <input matInput type="text" outline>
             <button disabled matPrefix mat-icon-button>
                 <mat-icon>search</mat-icon>
             </button>
-        </mat-form-field>
+        </mat-form-field> -->
+        <!-- <mat-form-field appearance="outline">
+            <input type="text" matInput placeholder="search">
+            <mat-icon matSuffix style="font-size: 1.2em">search</mat-icon>
+        </mat-form-field> -->
         <span class="spacer"></span>
         <button mat-icon-button>
             <mat-icon>favorite</mat-icon>
@@ -43,5 +47,6 @@
         <button mat-icon-button>
             <mat-icon>share</mat-icon>
         </button>
-    </mat-toolbar> -->
+    </mat-toolbar>
+    <router-outlet></router-outlet>
 </mat-drawer-container>

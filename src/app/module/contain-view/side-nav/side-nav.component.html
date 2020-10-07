@@ -1,13 +1,16 @@
-<div fxLayout="row" fxLayoutAlign="center center" class="header-username">
+<!-- <div fxLayout="row" fxLayoutAlign="center center" class="header-username">
     <h3 style="color: white;">Menu</h3>
-</div>
+</div> -->
+<mat-toolbar color="warn" fxLayout="row" fxLayoutAlign="center center">
+    <h3 style="color: white;">Menu</h3>
+</mat-toolbar>
 <mat-nav-list style="padding: 0px;">
-    <mat-list-item routerLink="/setting" routerLinkActive="active" >
+    <mat-list-item routerLink="/home/chat">
         <mat-icon mat-list-icon>chat</mat-icon>
         <div mat-line>Chat</div>
     </mat-list-item>
     <mat-divider></mat-divider>
-    <mat-list-item>
+    <mat-list-item routerLink="/home/setting">
         <mat-icon mat-list-icon>settings</mat-icon>
         <div mat-line>Setting</div>
     </mat-list-item>
