@@ -1,0 +1,10 @@
+<mat-toolbar color="primary">
+    <h4>Your Username</h4>
+</mat-toolbar>
+<mat-nav-list>
+    <mat-list-item *ngFor="let userName of userNmaes">
+        <mat-icon mat-list-icon>folder</mat-icon>
+        <div mat-line>{{userName}}</div>
+        <mat-divider></mat-divider>
+    </mat-list-item>
+</mat-nav-list>

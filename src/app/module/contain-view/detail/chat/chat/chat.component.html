@@ -1,1 +1,10 @@
-<p>chat works!</p>
+<div style="width: 100%;height: 100%;">
+  <mat-drawer-container class="container">
+    <mat-drawer mode="side" opened style="width: 250px;">
+      <app-chat-user-list></app-chat-user-list>
+    </mat-drawer>
+    <mat-drawer-content>
+      <app-chat-detail></app-chat-detail>
+    </mat-drawer-content>
+  </mat-drawer-container>
+</div>

@@ -1,0 +1,12 @@
+.container{
+    width: 500px;
+    height: 300px;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    border: solid 4px rgba(149, 141, 206, 0.16);
+    border-radius: 4px;
+}

@@ -1,0 +1,18 @@
+<div class="container" fxLayout="column" fxLayoutAlign="space-between ">
+    <mat-toolbar color="primary">Chat App</mat-toolbar>
+    <form fxLayout="column" fxLayoutAlign="space-around end " style="height: 100%;padding: 10px;">
+        <div fxLayout="column" fxLayoutAlign="space-between" style="width: 100%;">
+            <mat-form-field appearance="outline">
+                <mat-icon matPrefix>person_outline</mat-icon>
+                <input autofocus type="text" matInput placeholder="Username" formControlName="username">
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-icon matPrefix>lock_outline</mat-icon>
+                <input type="password" autocomplete="false" matInput placeholder="Password" formControlName="password">
+            </mat-form-field>
+        </div>
+
+        <button mat-raised-button color="primary" style="width: 40px;" (click)="login()"><span>Login</span></button>
+    </form>
+</div>
